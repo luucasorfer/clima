@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Previsão do tempo</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h1>Previsão do tempo para a cidade de:</h1>
-  <form method="post">
-    <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
-    <button type="button" onclick="buscarDados()">Buscar</button>
-  </form>
-  <div id="resultado"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de clima</title>
 
-  <script src="app.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="temperature-now">
+        <div class="location">
+          <img src="./assets/pin.svg" alt="icone de localização" />
+          <strong> Rio do Sul, SC</strong>
+        </div>
+        <div class="temp">
+          <div class="number">
+            <p class="now-temp">18</p>
+            <div class="maxmin">
+              <span class="max-temp">22°</span>
+              <span class="min-temp">16°</span>
+            </div>
+          </div>
+          <div class="celsius">°C</div>
+        </div>
+        <div class="statistics">
+          <div class="info"></div>
+          <div class="info"></div>
+          <div class="info"></div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

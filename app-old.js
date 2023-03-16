@@ -18,3 +18,4 @@ function mostrarDados(data) {
     <p>Velocidade do vento: ${data.wind.speed} m/s</p>
   `;
 }
+

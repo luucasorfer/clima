@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  background: url(./assets/bg.jpeg) no-repeat center/cover;
+
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+section {
+  background: #6d67d0;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+
+.temperature-now {
+  background: url(./assets/bg-temp-now.jpeg);
+
+  position: relative;
+
+  width: 48rem;
+  height: 48rem;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.temperature-now::before {
+  content: "";
+  width: 17.6rem;
+  height: 17.6rem;
+
+  background: url(./assets/clouds.svg);
+
+  position: absolute;
+
+  top: -5.9rem;
+  left: -5.9rem;
+}
+
+.location {
+  justify-self: end;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 3.2rem 3.2rem 0;
+}
+
+.location strong {
+  color: #c2bff4;
+  font-size: 1.4rem;
+}
+
+.temp {
+  margin: 6rem;
+
+  font-weight: 700;
+
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.temp .number {
+  text-align: center;
+
+  color: #ffffff;
+  font-size: 8.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.maxmin {
+  display: flex;
+  gap: 1rem;
+}
+.max-temp,
+.min-temp {
+  font-size: 2rem;
+}
+
+.temp .number .min-temp {
+  color: #c2bff4;
+}
+
+.celsius {
+  font-size: 2.4rem;
+  color: #DAD8F7;
+
+  margin-top: 1.5rem;
+}
