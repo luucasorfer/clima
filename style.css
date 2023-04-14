@@ -87,15 +87,18 @@ section {
 
   color: #ffffff;
   font-size: 8.8rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+
+.now {
+  display: flex;
+}
+
 .maxmin {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
+
 .max-temp,
 .min-temp {
   font-size: 2rem;
@@ -107,7 +110,43 @@ section {
 
 .celsius {
   font-size: 2.4rem;
-  color: #DAD8F7;
+  color: #dad8f7;
 
   margin-top: 1.5rem;
+}
+
+.statistics {
+  display: flex;
+  gap: 0.8rem;
+
+  padding: 1.2rem;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex: 1;
+
+  padding: 1.2rem 1.6rem;
+
+  background: rgba(102, 96, 200, 0.6);
+  border-radius: 6px;
+}
+
+.stats .info {
+  color: #e7e6fb;
+}
+
+.stats .info h5 span,
+.stats .info p {
+  font-size: 1.4rem;
+}
+
+.stats .info h5 {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: baseline;
+  gap: .4rem;
 }

@@ -1,6 +1,10 @@
+import { apiKey } from "./config.js";
+
 function buscarDados() {
   const cidade = document.getElementById("cidade").value;
-  const apiKey = "eb7734c1aba3afea232fb5b9197ed7d1";
+  console.log(apiKey);
+  console.log(cidade);
+  //const apiKey = "eb7734c1aba3afea232fb5b9197ed7d1";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}`;
 
   fetch(url)
@@ -18,4 +22,3 @@ function mostrarDados(data) {
     <p>Velocidade do vento: ${data.wind.speed} m/s</p>
   `;
 }
-
